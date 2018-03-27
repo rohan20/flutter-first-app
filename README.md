@@ -1,6 +1,7 @@
-# flutter_first_app
+# Flutter First App
 
-A new Flutter project.
+Build Your First Flutter App in Dart 
+Based on <a href="https://codelabs.developers.google.com/codelabs/build-your-first-android-app/">this</a> Google code lab
 
 ## Getting Started
 
