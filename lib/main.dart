@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -36,12 +35,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
- 
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(widget.title),
       ),
-      
       body: new Center(
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -53,10 +50,23 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
+            new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                new RaisedButton(
+                  child: new Text("TOAST"),
+                ),
+                new RaisedButton(
+                  child: new Text("COUNT"),
+                ),
+                new RaisedButton(
+                  child: new Text("RANDOM"),
+                ),
+              ],
+            ),
           ],
         ),
       ),
-      
       floatingActionButton: new FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
