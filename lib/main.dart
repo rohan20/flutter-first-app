@@ -55,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 new RaisedButton(
                   child: new Text("TOAST"),
+                  onPressed: _toastPressed,
                 ),
                 new RaisedButton(
                   child: new Text("COUNT"),
@@ -74,4 +75,6 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
+  void _toastPressed() {}
 }
